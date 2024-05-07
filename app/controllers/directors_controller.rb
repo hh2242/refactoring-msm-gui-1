@@ -5,6 +5,9 @@ class DirectorsController < ApplicationController
     render({ :template => "director_templates/index" })
   end
 
+  def filmography
+  end
+
   def show
     the_id = params.fetch("path_id")
     @the_director = Director.find(the_id)
